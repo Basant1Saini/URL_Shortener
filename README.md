@@ -13,7 +13,7 @@ A full-stack URL shortening service built with MongoDB, Express.js, React, and N
 ## 🛠️ Tech Stack
 
 ### Backend
-- **Node.js** (v18+) - Runtime environment
+- **Node.js** (v20+) - Runtime environment
 - **Express.js** - Web framework
 - **MongoDB** - Database
 - **Mongoose** - ODM for MongoDB
@@ -46,8 +46,7 @@ URL_Shortener/
 │   │   ├── authController.js
 │   │   └── urlController.js
 │   ├── middleware/
-│   │   ├── auth.js
-│   │   └── rateLimiter.js
+│   │   └── auth.js
 │   ├── models/
 │   │   ├── User.js
 │   │   └── Url.js
@@ -63,17 +62,17 @@ URL_Shortener/
 │   ├── public/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Dashboard.js
-│   │   │   ├── Login.js
-│   │   │   ├── Register.js
-│   │   │   ├── UrlShortener.js
-│   │   │   └── Analytics.js
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── UrlShortener.jsx
+│   │   │   └── Analytics.jsx
 │   │   ├── context/
-│   │   │   └── AuthContext.js
+│   │   │   └── AuthContext.jsx
 │   │   ├── services/
 │   │   │   └── api.js
-│   │   ├── App.js
-│   │   └── index.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │   ├── package.json
 │   └── tailwind.config.js
 └── README.md
@@ -194,9 +193,9 @@ URL_Shortener/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v18+)
-- MongoDB (v5+)
-- npm (v8+) or yarn (v3+)
+- Node.js (v20+) - Latest LTS
+- MongoDB (v7+)
+- npm (v10+) or yarn (v4+)
 
 ### Installation
 
@@ -238,8 +237,8 @@ RATE_LIMIT_MAX_REQUESTS=100
 
 ### Frontend (.env)
 ```
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_BASE_URL=http://localhost:3000
+VITE_API_URL=http://localhost:5000/api
+VITE_BASE_URL=http://localhost:3000
 ```
 
 ## 📝 Future Enhancements
